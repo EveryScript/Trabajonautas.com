@@ -13,15 +13,6 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-
-        // $table->id();
-        //     $table->string('name');
-        //     $table->string('email')->unique();
-        //     $table->timestamp('email_verified_at')->nullable();
-        //     $table->string('password');
-        //     $table->rememberToken();
-        //     $table->timestamps();
-
         User::create([
             'id' => 1,
             'name' => 'Rick Grimes',

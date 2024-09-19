@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('company_name');
             $table->string('description');
-            $table->string('company_type');
             $table->string('company_image');
             $table->unsignedBigInteger('user_id'); // Foreign key
+            $table->unsignedBigInteger('company_type_id'); // Foreign key
             $table->timestamps();
         });
     }

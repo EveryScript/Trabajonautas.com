@@ -2,16 +2,17 @@
 
 namespace Database\Seeders;
 
+use App\Models\Profesion;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Company;
-use App\Models\Location;
-use Illuminate\Support\Facades\DB;
 
-class CompanySeeder extends Seeder
+class ProfesionSeeder extends Seeder
 {
+    /**
+     * Run the database seeds.
+     */
     public function run(): void
     {
-        Company::factory()->count(20)->create();
+        Profesion::factory()->count(70)->create();
     }
 }
